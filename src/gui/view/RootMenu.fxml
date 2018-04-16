@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="rootMenu" prefHeight="560.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.view.RootMenuController">
+   <top>
+      <JFXToolbar fx:id="toolBar" styleClass="indigo-700" BorderPane.alignment="CENTER">
+         <left>
+            <HBox fx:id="barHBox" prefHeight="60.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXHamburger fx:id="menuButton" prefHeight="60.0" prefWidth="60.0" />
+                  <Label fx:id="titleLabel" prefHeight="60.0" prefWidth="200.0" styleClass="indigo-700" text="Sudoku Game">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </left>
+      </JFXToolbar>
+   </top>
+</BorderPane>

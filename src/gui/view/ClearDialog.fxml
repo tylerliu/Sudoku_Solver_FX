@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane fx:id="clearDialog" prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.view.DialogController">
+   <children>
+        <Label fx:id="message" text="Do you want to clear the sudoku grid?" textFill="#1c1c1c" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="24.0">
+           <font>
+              <Font size="20.0" />
+               </font>
+            </Label>
+            <HBox layoutX="268.0" layoutY="79.0" spacing="16.0" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="16.0">
+               <children>
+                  <JFXButton fx:id="cancelButton" layoutX="269.0" layoutY="95.0" onMouseClicked="#cancel" text="Cancel" textAlignment="CENTER" textFill="#1c61b5">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="clearButton" layoutX="321.0" layoutY="80.0" onMouseClicked="#clear" text="Clear" textFill="#1c61b5">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+   </children>
+</AnchorPane>

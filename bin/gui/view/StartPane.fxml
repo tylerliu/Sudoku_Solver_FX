@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.view.StartPaneController">
+   <children>
+      <VBox layoutX="332.0" layoutY="130.0" spacing="10.0">
+         <children>
+            <JFXRadioButton fx:id="relaxButton" layoutX="342.0" layoutY="215.0" styleClass="grid" text="Relax">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="easyButton" layoutX="352.0" layoutY="225.0" styleClass="grid" text="Easy">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="normalButton" layoutX="352.0" layoutY="260.0" styleClass="grid" text="Normal">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="hardButton" layoutX="352.0" layoutY="296.0" styleClass="grid" text="Hard">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="insaneButton" layoutX="352.0" layoutY="352.0" styleClass="grid" text="Insane">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXRadioButton>
+         </children>
+      </VBox>
+      <JFXButton fx:id="startButton" buttonType="RAISED" layoutX="276.0" layoutY="376.0" onMouseClicked="#startGame" prefHeight="60.0" prefWidth="200.0" styleClass="menu-button" text="Start">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXSpinner fx:id="spinner" layoutX="491.0" layoutY="390.0" />
+      <Label layoutX="316.0" layoutY="99.0" styleClass="messageLabel" text="Levels:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
